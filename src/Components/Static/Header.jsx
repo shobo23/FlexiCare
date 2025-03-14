@@ -32,8 +32,7 @@ const Header = () => {
             </div>
           </ul>
           <div className="flex gap-4">
-            <Button text="Sign Up" />
-            <Button text="Sign In" />
+            <Button text="Get Started" />
           </div>
         </div>
       </header>

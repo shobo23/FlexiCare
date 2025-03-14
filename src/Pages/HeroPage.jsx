@@ -14,16 +14,15 @@ const HeroPage = () => {
               Healthcare Made Simple, Affordable & Accessible
             </h1>
             <p className="text-[18px] mb-2">
-              Allowing users to consult doctors, order medicines, and book lab
+              Allowing users to consult pharmacy, order medicines, and book lab
               tests anytime, without the need for expensive insurance or long
               clinic visits.
             </p>
             <p className="w-full flex justify-end font-medium text-[#E45E32]">
               <i>...all in one place</i>
             </p>
-            <div className="flex gap-3">
-                <OutlineBtn text="Get Started"/>
-                <OutlineBtn text="Find a Doctor"/>
+            <div className="flex gap-3 max-[786px]:justify-center max-[786px]:mt-5">
+                <OutlineBtn text="Consult a Pharmacy"/>
             </div>
           </div>
           <div className="w-full flex justify-end items-center">
