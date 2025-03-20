@@ -3,7 +3,7 @@ import React from "react";
 const HowItWorksCards = ({ topText, img, smallText }) => {
   return (
     <>
-      <div className="bg-[#C3D3D2] rounded-lg shadow-lg flex flex-col gap-2 justify-center items-center p-5">
+      <div className="bg-[#fff] w-full rounded-lg shadow-lg flex flex-col gap-2 justify-center items-center p-5">
         <div className="w-60 rounded-lg">
           <img
             src={img}
@@ -12,7 +12,7 @@ const HowItWorksCards = ({ topText, img, smallText }) => {
           />
         </div>
 
-        <div className="text-lg">
+        <div className="text-lg text-sky-700">
           <p>{topText}</p>
         </div>
 

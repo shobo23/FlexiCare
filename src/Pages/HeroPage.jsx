@@ -4,10 +4,11 @@ import OutlineBtn from "../Components/Button/OutlineBtn";
 import { useNavigate } from "react-router-dom";
 
 const HeroPage = () => {
-    const Nav = useNavigate()
+  const Nav = useNavigate();
+
   return (
     <>
-      <div className="w-full h-screen flex justify-between items-center bg-[#c3d3d2]">
+      <div id="hero" className="min-[1024px]:mt-10 w-full h-screen flex justify-between items-center bg-[#c3d3d2]">
         <div className="px-10 grid items-center justify-center lg:grid-cols-2 max-[786px]:grid-cols-1 gap-15">
           <div className="w-full">
             <h1 className="text-titleText lg:leading-14 text-6xl mb-5 font-semibold text-[#0069A8]">
@@ -21,7 +22,7 @@ const HeroPage = () => {
             <p className="w-full flex justify-end font-medium text-[#E45E32]">
               <i>...all in one place</i>
             </p>
-            <div className="flex gap-3 max-[786px]:justify-center max-[786px]:mt-5">
+            <div onClick={() => {Nav("/signup")}} className="flex gap-3 max-[786px]:justify-center max-[786px]:mt-5">
                 <OutlineBtn text="Consult a Pharmacy"/>
             </div>
           </div>

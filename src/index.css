@@ -3,11 +3,12 @@
 @import "tailwindcss";
 
 @theme {
-  --text-responsiveText: clamp(14px, 3vw, 24px);
+  --text-responsiveText: clamp(14px, 3vw, 20px);
   --text-titleText: clamp(24px, 5vw, 50px);
   --font-display: "Roboto", sans-serif;
 }
 
 body {
   font-family: var(--font-display);
+  scroll-behavior: smooth;
 }

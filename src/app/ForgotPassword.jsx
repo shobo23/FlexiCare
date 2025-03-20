@@ -1,6 +1,8 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const ForgotPassword = () => {
+  const Nav = useNavigate()
   return (
     <div className='flex justify-center items-center bg-[#C3D3D2] h-[100vh]'>
       <form className='w-[400px]'>
@@ -12,7 +14,7 @@ const ForgotPassword = () => {
         </div>
         <button className='w-full rounded-[10px] bg-sky-700 text-white p-[3px] mb-[10px]'>Submit</button>
         <div className='text-center'>
-            <p>Remember Password? <a href="#" className='text-sky-700'>Sign In</a></p>
+            <p>Remember Password? <span onClick={() => Nav('/login')} className='text-sky-700 cursor-pointer'>Sign In</span></p>
         </div>
       </form>
     </div>
