@@ -17,7 +17,7 @@ const Footer = () => {
     <div className="px-10 bg-[#c3d3d2] py-8">
       <div className="flex justify-between items-center flex-wrap">
         
-        <div className="w-full md:w-1/4">
+        <div className="w-35 md:w-1/4">
           <img
             src={Logo}
             alt="FlexiCare"

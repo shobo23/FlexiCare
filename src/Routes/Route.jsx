@@ -5,7 +5,6 @@ import GetStarted from "../Pages/Auth/GetStarted";
 import SignUp from "../app/SignUp";
 import SignIn from "../app/SignIn";
 import ForgetPassword from "../app/ForgotPassword";
-import UserDashboard from "../../src/Dashboards/UserDashboard";
 
 const router = createBrowserRouter([
   {
@@ -27,10 +26,6 @@ const router = createBrowserRouter([
   {
     path: "/forgetpassword",
     element: <ForgetPassword />,
-  },
-  {
-    path: "/userdashboard",
-    element: <UserDashboard />,
   },
   {
     path: "*",
