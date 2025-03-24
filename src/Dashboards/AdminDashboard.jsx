@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FiHome, FiUser, FiSettings, FiLogOut } from "react-icons/fi";
+import Logo from '../assets/flexi-logo.png'
 
 const AdminDashboard = () => {
   const [active, setActive] = useState("Dashboard");
@@ -7,9 +8,13 @@ const AdminDashboard = () => {
   return (
     <div className="flex w-screen h-screen bg-gray-100">
       {/* Sidebar */}
-      <div className="w-64 bg-white shadow-md">
-        <div className="p-5 text-center font-bold text-xl text-sky-600">Admin Panel</div>
-        <nav className="mt-5">
+      <div className="w-50 bg-sky-700 text-white shadow-md">
+        <div className="py-5 w-full flex justify-center items-center">
+        <div className="w-30">
+          <img src={Logo} alt="Logo" className="size-full object-contain overflow-hidden"/>
+        </div>
+        </div>
+        <nav className="">
           <ul className="space-y-2">
             <li
               className={`p-3 flex items-center space-x-2 cursor-pointer ${
@@ -40,12 +45,6 @@ const AdminDashboard = () => {
             </li>
           </ul>
         </nav>
-        <div className="absolute bottom-5 w-full">
-          <button className="w-full p-3 flex items-center justify-center space-x-2 bg-red-500 text-white hover:bg-red-600">
-            <FiLogOut />
-            <span>Logout</span>
-          </button>
-        </div>
       </div>
 
       {/* Main Content */}
