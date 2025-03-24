@@ -66,6 +66,7 @@ const PharmacyRegister = () => {
         icon: "error",
         confirmButtonColor: "#E45E32",
       });
+      Nav('/emailverification')
     }
   };
 
