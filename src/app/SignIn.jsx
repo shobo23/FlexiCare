@@ -241,7 +241,7 @@ const SignIn = () => {
           <div className="w-full mt-5 flex justify-center items-center">
             <Button text="Login" isLoading={isLoading} />
           </div>
-          <p onClick={() => Nav("/signup")} className="text-center mt-3">
+          <p onClick={() => Nav("/forgetpassword")} className="text-center mt-3">
             Forgot Password?{" "}
             <span className="text-[#E7E6DD] cursor-pointer hover:text-[#E45E32]">
               Click Here

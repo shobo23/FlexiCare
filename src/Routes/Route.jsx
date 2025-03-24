@@ -5,6 +5,8 @@ import GetStarted from "../Pages/Auth/GetStarted";
 import SignUp from "../app/SignUp";
 import SignIn from "../app/SignIn";
 import ForgetPassword from "../app/ForgotPassword";
+import PharmacyRegister from "../app/PharmacyRegister";
+import PharmacySignin from "../app/PharmacySignin";
 import PharmacyDashboard from "../Dashboards/PharmacyDashboard";
 import AdminDashboard from "../Dashboards/AdminDashboard";
 import UserDashboard from "../Dashboards/UserDashboard";
@@ -74,6 +76,14 @@ const router = createBrowserRouter([
         </Link>
       </div>
     ),
+  },
+  {
+    path : "/pharmacyregister",
+    element: <PharmacyRegister />
+  },
+  {
+    path : "/pharmacylogin",
+    element: <PharmacySignin />
   },
 ]);
 
