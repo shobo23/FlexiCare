@@ -49,7 +49,7 @@ const PharmacyRegister = () => {
       });
 
       // ✅ Navigate to Login Page
-      Nav("/pharmacylogin");
+      Nav('/emailverification')
     } catch (error) {
       console.log(error);
       setIsLoading(false);
@@ -66,7 +66,7 @@ const PharmacyRegister = () => {
         icon: "error",
         confirmButtonColor: "#E45E32",
       });
-      Nav('/emailverification')
+      
     }
   };
 
