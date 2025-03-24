@@ -5,6 +5,8 @@ import GetStarted from "../Pages/Auth/GetStarted";
 import SignUp from "../app/SignUp";
 import SignIn from "../app/SignIn";
 import ForgetPassword from "../app/ForgotPassword";
+import PharmacyRegister from "../app/PharmacyRegister";
+import PharmacySignin from "../app/PharmacySignin";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +32,14 @@ const router = createBrowserRouter([
   {
     path: "*",
     element: <div>404</div>,
+  },
+  {
+    path : "/pharmacyregister",
+    element: <PharmacyRegister />
+  },
+  {
+    path : "/pharmacylogin",
+    element: <PharmacySignin />
   },
 ]);
 
