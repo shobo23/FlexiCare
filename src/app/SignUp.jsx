@@ -187,13 +187,13 @@ const SignUp = () => {
       // ✅ Show success alert
       Swal.fire({
         title: "Sign Up Successful!",
-        text: "Login to proceed!",
+        text: "Check Gmail For Confirmation",
         icon: "success",
         confirmButtonColor: "#0069A8",
       });
 
-      // ✅ Navigate to Login Page
-      Nav("/login");
+      // ✅ Navigate to verification Page
+      Nav("/emailverification");
     } catch (error) {
       console.log(error);
       setIsLoading(false);
