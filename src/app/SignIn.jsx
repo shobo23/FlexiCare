@@ -248,7 +248,7 @@ const SignIn = () => {
             </span>
           </p>
           {errorMessage && (
-            <p className="text-red-500 text-sm">{errorMessage}</p>
+            <p className="text-red-500 text-responsiveText">{errorMessage}</p>
           )}
         </div>
       </form>

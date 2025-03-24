@@ -15,13 +15,13 @@ const Footer = () => {
 
   return (
     <div className="px-10 bg-[#c3d3d2] py-8">
-      <div className="flex justify-between items-center flex-wrap">
+      <div className="grid min-[1024px]:grid-cols-4 max-[786px]:grid-cols-2 max-[425px]:grid-cols-1">
         
-        <div className="w-35 md:w-1/4">
+        <div className="w-40">
           <img
             src={Logo}
             alt="FlexiCare"
-            className="size-full object-cover overflow-hidden"
+            className="size-full object-contain overflow-hidden"
           />
         </div>
 
