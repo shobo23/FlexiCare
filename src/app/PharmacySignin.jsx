@@ -8,7 +8,7 @@ import { IoChevronBackCircleOutline } from "react-icons/io5";
 import Button from "../Components/Button/Button";
 import { addUser } from "../services/userSlice";
 
-const SignIn = () => {
+const PharmacySignin = () => {
   const Nav = useNavigate();
   const dispatch = useDispatch();
   const [values, setValues] = useState({
@@ -31,7 +31,7 @@ const SignIn = () => {
 
     try {
       const response = await axios.post(
-        "https://flexicarebackend.onrender.com/api/login",
+        "https://flexicarebackend.onrender.com/api/pharmacy/signin",
         values
       );
 
@@ -83,7 +83,7 @@ const SignIn = () => {
             </div>
           </div>
           <h1 className="text-3xl mb-[5px] text-[#012047] font-bold">
-            Patient Login
+            Pharmacy Login
           </h1>
           <p className="mb-[15px] text-[#E7E6DD]">
             Provide your information to login.
@@ -118,7 +118,7 @@ const SignIn = () => {
             </span>
           </p>
           {errorMessage && (
-            <p className="text-red-500 text-responsiveText">{errorMessage}</p>
+            <p className="text-red-500 text-sm">{errorMessage}</p>
           )}
         </div>
       </form>
@@ -126,4 +126,4 @@ const SignIn = () => {
   );
 };
 
-export default SignIn;
+export default PharmacySignin;

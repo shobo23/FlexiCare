@@ -31,7 +31,7 @@ const GetStarted = () => {
           <p>Sign up as Patient to see Pharmacy close to you and consult them.</p>
           </div>
           <div className="grid grid-cols-2 max-[786px]:grid-cols-1 justify-center items-center gap-3">
-            <div className="max-[786px]:w-full max-[786px]:my-2 max-[786px]:flex max-[786px]:justify-center max-[786px]:item-center">
+            <div className="max-[786px]:w-full max-[786px]:my-2 max-[786px]:flex max-[786px]:justify-center max-[786px]:item-center" onClick={() => Nav('/pharmacyregister')}>
             <Button text="Sign Up As Pharmacy"/>
             </div>
             <div className="max-[786px]:w-full max-[786px]:flex max-[786px]:justify-center max-[786px]:item-center" onClick={() => Nav('/signUp')}>
