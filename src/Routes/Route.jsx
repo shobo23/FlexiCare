@@ -54,11 +54,11 @@ const router = createBrowserRouter([
     element: <VerifyEmail />,
   },
   {
-    path: "/verification/:token",
+    path: "/verify/:token",
     element: <Verification />,
   },
   {
-    path: "/pharmacyverification/:token",
+    path: "/pharmacy/verify/:token",
     element: <PharmacyVerification />,
   },
 
