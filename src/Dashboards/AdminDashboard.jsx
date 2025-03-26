@@ -66,8 +66,8 @@ import DashboardContent from './DashboardContent'
 const AdminDashboard = () => {
   return (
     <div>
-      <DashboardHeader />
       <SideBar />
+      <DashboardHeader />
       <DashboardContent />
     </div>
   )

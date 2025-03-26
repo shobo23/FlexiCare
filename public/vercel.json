@@ -1,0 +1,3 @@
+{
+  "rewrites": [{ "source": "/verify/:token", "destination": "/" }]
+}
