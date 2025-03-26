@@ -33,7 +33,7 @@ const Verification = () => {
     const verifyEmail = async () => {
       try {
         const response = await axios.get(
-          `https://flexi-care.vercel.app/verify/${token}`
+          `https://flexicarebackend.onrender.com/api/verify/${token}`
         );
         // const data = await response.json();
         console.log(response.data);
